@@ -72,17 +72,35 @@
         </div>
     </nav>
    
-   {% block cta %}{% endblock cta %}
+    {% block cta %}{% endblock cta %}
 </div>
 
+{% block content %}{% endblock content %}
 
-    {% block content %}{% endblock content %}
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 </p>
+            </div>
+            <div class="col-md-6">
+                <ul class="footer-links">
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Contate-nos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
-  <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
   
- <script>
+<script>
     {% block script %}{% endblock script %}
- </script>
+</script>
+
 </body>
 
 </html>
+

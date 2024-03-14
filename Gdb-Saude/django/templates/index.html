@@ -2,7 +2,6 @@
 {% load static %}
 {% block cta %}
 
-
 <div class="container hero">
         <div class="row">
           <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
@@ -46,14 +45,12 @@
                 </div>
             </div>
 
-         
             <div class="col-xl-3 col-sm-6 mb-5">
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/team2.jpg' %}" alt="" class=" mh-100 rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0">Dr Ana </h5>
                     <span class="small text-uppercase text-muted">Médico Psiquiatra</span>
                 </div>
             </div>
-
           
             <div class="col-xl-3 col-sm-6 mb-5">
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="{% static 'img/team3.jpg' %}" alt="" class=" mh-100img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -81,7 +78,6 @@
     </div>
   </div>
 </div>
-
 
   <div class="container">
     <div class="row">
@@ -127,13 +123,11 @@
       </div>
     </div>
 
-    <div class="text-right" style="float: left;">
-      <img src="../static/img/logobranca.png" alt="Logo" style="border-radius: 100px; max-width: 60%; height: auto; margin: 150px;">
-  </div>
+    <div class="text-center">
+      <img src="../static/img/logoverde.png" alt="Logo" style="border-radius: 1000px; max-width: 60%; height: auto; margin: 150px;">
+    </div>
 </section>
            
-  
-
 <section class="text-center container" style="margin-block: 100px;" id="reviews">
   <h2>Pacientes Satisfeitos</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -176,78 +170,78 @@
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-                 
-<div class="col-lg-6 mx-auto mb-4">
-  <div class="custom-form">
+
+
+<div class="row">
+  <div class="col-lg-6 mx-auto mb-4">
+    <div class="custom-form">
       <div class="form-header">
-          <h4 class="form-text">Cadastro</h4>
-          <div class="text-right">
-            <img src="../static/img/logobranca.png" alt="Logo" style="max-width: 100px; height: 100px;">
+        <h4 class="form-text">Cadastro</h4>
+        <div class="text-right">
+          <img src="../static/img/logobranca.png" alt="Logo" style="max-width: 100px; height: 100px;">
         </div>
       </div>
       <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
         {% csrf_token %}
         <div class="form-group">
-            <label for="name2">Nome</label>
-            <input class="form-control" id="name2" name="name" type="text" placeholder="Nome">
-            <div class="error" id="err-name" style="display: none;">Por favor insira o nome</div>
+          <label for="name2">Nome</label>
+          <input class="form-control" id="name2" name="name" type="text" placeholder="Nome">
+          <div class="error" id="err-name" style="display: none;">Por favor insira o nome</div>
         </div>
 
         <div class="form-group">
-            <label for="email2">Email</label>
-            <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
-            <div class="error" id="err-emailvld" style="display: none;">E-mail não é um formato válido</div>
+          <label for="email2">Email</label>
+          <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
+          <div class="error" id="err-emailvld" style="display: none;">E-mail não é um formato válido</div>
         </div>
 
         <div class="form-group">
-            <label for="CEP">Sexo</label>
-            <input class="form-control" id="CPF" type="text" placeholder="Sexo">
-            <div class="error" id="err-sexo" style="display: none;"></div>
+          <label for="CEP">Sexo</label>
+          <input class="form-control" id="CPF" type="text" placeholder="Sexo">
+          <div class="error" id="err-sexo" style="display: none;"></div>
         </div>
 
         <div class="form-group">
-            <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!
+          <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!</p>
         </div>
 
         <div class="row">
-            <div class="col">
-                <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-100" id="send">Enviar</button>
+          <div class="col">
+            <button type="submit" class="btn btn-primary btn-rounded w-100">Enviar</button>
+          </div>
+        </div>
+      </form>
+      <div class="form-footer">
+        <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!</p>
+      </div>
+    </div>
+  </div>
+
+       <!-- Formulário de Consulta de Profissional -->
+       <div class="col-lg-6 mx-auto mb-4">
+        <div class="custom-form">
+            <div class="form-header">
+                <h1 class="form-text">Consultar profissional</h1>
+                
+            </div>
+            <form id="buscarProfissionaisForm" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="tipoProfissional" class="form-text"><h4>Escolha o tipo de Profissional:</h4></label>
+                    <select class="form-control" id="tipoProfissional">
+                        <option value="Dr Alice ( especialita em tratamento para Jogos de Azar)">Dr Alice (Tratamento para Jogos de Azar)</option>
+                        <option value="Dr Ana ( especialita em tratamento para Alcoolismo)">Dr Ana (Tratamento para Alcoolismo)</option>
+                        <option value="Dr Thiago ( especialita em tratamento para Tabaco)">Dr Thiago (Tratamento para Tabaco)</option>
+                        <option value="Dr Samuel ( especialita em tratamento para Cannabis)">Dr Samuel (Tratamento para Cannabis)</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="consultaProfissional()">Pesquisar</button>
+            </form>
+            <div class="contact-map">
+                <iframe id="mapaProfissional" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 430px;"></iframe>
             </div>
         </div>
-    </form>
-    <div class="form-footer">
-        <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!</p>
     </div>
-</div>
-</div>
-
-
-      
-       
-<fieldset>
-                                                                        <!-- Formulário de Consulta de Profissional -->
-        <form id="buscarProfissionaisForm" method="post">
-          {% csrf_token %}
-      
-          <div class="form-group">
-              <h1>Consultar profissional</h1>
-              <label for="tipoProfissional">Escolha o tipo de Profissional:</label>
-              <select class="form-control" id="tipoProfissional">
-               
-                <option value="Dr Alice ( especialita em tratamento para Jogos de Azar)">Dr Alice (Tratamento para Jogos de Azar)</option>
-                <option value="Dr Ana ( especialita em tratamento para Alcoolismo)">Dr Ana (Tratamento para Alcoolismo)</option>
-                <option value="Dr Thiago ( especialita em tratamento para Tabaco)">Dr Thiago (Tratamento para Tabaco)</option>
-                <option value="Dr Samuel ( especialita em tratamento para Cannabis)">Dr Samuel (Tratamento para Cannabis)</option>
-              </select>
-          </div>
-      
-          <button type="button" class="btn btn-primary" onclick="consultaProfissional()">Pesquisar</button>
-        </fieldset>      
-      </form>
-      
-      <div class="contact-map">
-          <iframe id="mapaProfissional" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
-      </div>
       
       <script>
           function consultaProfissional() {
@@ -256,7 +250,7 @@
       
               // Determinar o CEP com base no tipo de profissional selecionado
               switch (tipoProfissional) {
-                    case '';
+                    
                   case 'Dr Alice ( especialita em tratamento para Jogos de Azar)':
                       cep = '	52031-900';
                       break;
@@ -284,53 +278,42 @@
 
        </script>
 
-    <fieldset>
-       <section id="contact" class="card m-4 p-4">
-        <div class="container">
-            <div class="row text-center">
-              
-                <div class="col-sm-6">
-                <div class="contact-detail-box">
-                  <i class="far fa-envelope text-colored fa-3x"></i>
-                  <h4>Entrar em contato</h4>
-                  <abbr title="Phone">(55) 81 9 9120-5555<br>
-                  Email: <a href="mailto:email@email.com" class="text-muted">thiagorramos@souunit.com.br</a>
+       
+        <section id="contact" class="card m-4 p-4 w-100">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <div class="contact-detail-box">
+                            <i class="far fa-envelope text-colored fa-3x"></i>
+                            <h4>Entrar em contato</h4>
+                            <abbr title="Phone">(55) 81 9 9120-5555<br>
+                            Email: <a href="mailto:email@email.com" class="text-muted">thiagorramos@souunit.com.br</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-detail-box">
+                            <i class="fa fa-map-marker fa-3x text-colored"></i>
+                            <h4>Nossa localização</h4>
+                            <address>
+                                Av. Mal. Mascarenhas de Morais, 3905 <br> 
+                                - Imbiribeira, Recife - PE, 51150-003
+                            </address>
+                        </div>
+                    </div>   
                 </div>
-              </div>
-      
-              <div class="col-sm-6">
-                <div class="contact-detail-box">
-                  <i class="fa fa-map-marker fa-3x text-colored"></i>
-                  <h4>Nossa localização</h4>
-      
-                  <address>
-                     Av. Mal. Mascarenhas de Morais, 3905 <br> 
-                    - Imbiribeira, Recife - PE, 51150-003
-                     
-                  </address>
+                <div class="row">
+                    <div class="col-lg-12 mb-4">
+                        <div class="contact-map">
+                            <iframe src="https://www.google.com/maps/embed/v1/place?q=Recife,Imbiribeira&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 600px;"></iframe>
+                        </div>
+                    </div>
                 </div>
-              </div>   
             </div>
+        </section>
+   
+    
       
-              <div class="row">
-                <div class="col-lg-6 mb-4 offset-lg-6">
-                  <div class="contact-map">
-                      <iframe src="https://www.google.com/maps/embed/v1/place?q=Recife,Imbiribeira&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4"
-                          frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
-                  </div>
-              </div>
-            </fieldset>
-
-
-
-
-
-
-
-
-
-
-
             <style>
               .custom-form {
                   background-color: rgb(39, 204, 135); 
@@ -360,22 +343,4 @@
                   font-size: 30px;
               }
           </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {% endblock content %}
