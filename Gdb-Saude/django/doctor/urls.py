@@ -6,4 +6,7 @@ urlpatterns = [
     path("make-an-appointment/", AppointmentTemplateView.as_view(), name="appointment"),
     path("manage-appointments/", ManageAppointmentTemplateView.as_view(), name="manage"),
     
+   
+    
+    
 ]

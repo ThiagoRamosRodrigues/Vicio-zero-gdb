@@ -7,7 +7,7 @@
         border: none !important;
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2)
     }
-
+s
     .blue-text {
         color: #00BCD4
     }
@@ -74,23 +74,23 @@
         <div class="row d-flex justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
                 <h3>
-                    Book an appointment
+                    Marque uma consulta
                 </h3>
-                <p class="blue-text">Use the following form to contact us and request an appointment..</p>
+                <p class="blue-text">Utilize o seguinte formulário para entrar em contato conosco e solicitar uma consulta.</p>
                 <div class="card">
                     
                     <form class="form-card" method="POST" action="{% url 'appointment' %}">
                     {% csrf_token %}
                         <div class="row justify-content-between text-left">
                             <div class="form-group col-sm-6 flex-column d-flex"> 
-                            <label class="form-control-label px-3">First name<span class="text-danger"> *</span>
+                            <label class="form-control-label px-3">Primeiro nome<span class="text-danger"> *</span>
                             </label> 
-                            <input required type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)"> 
+                            <input required type="text" id="fname" name="fname" placeholder="" onblur="validate(1)"> 
                         </div>
 
                         <div class="form-group col-sm-6 flex-column d-flex"> 
-                            <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> 
-                            <input required type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)"> 
+                            <label class="form-control-label px-3">Sobrenome<span class="text-danger"> *</span></label> 
+                            <input required type="text" id="lname" name="lname" placeholder="" onblur="validate(2)"> 
                         </div>
 
                         </div>
@@ -104,7 +104,7 @@
                             </div>
 
                             <div class="form-group col-sm-6 flex-column d-flex"> 
-                             <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> 
+                             <label class="form-control-label px-3">Numero de contato<span class="text-danger"> *</span></label> 
                               <input type="text" id="mob" name="mobile" placeholder="" onblur="validate(4)"> 
                             </div>
 
@@ -112,12 +112,12 @@
 
                         <div class="row justify-content-between text-left">
                             <div class="form-group col-12 flex-column d-flex"> 
-                                <label class="form-control-label px-3">Your request<span class="text-danger"> *</span></label> 
+                                <label class="form-control-label px-3">Seu pedido<span class="text-danger"> *</span></label> 
                                 <textarea type="text" id="ans" name="request" placeholder="" onblur="validate(6)"></textarea> 
                             </div>
                         </div>
                         <div class="row justify-content-end">
-                            <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Send</button> </div>
+                            <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Enviar</button> </div>
                         </div>
                     </form>
                 </div>

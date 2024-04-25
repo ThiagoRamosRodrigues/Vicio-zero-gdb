@@ -353,7 +353,7 @@
     <div class="container mt-5">
         <div class="col-11 text-center mt-4 mb-4">
             <h3>
-                Manage appointments
+              Gerenciar compromissos - Lista de Pacientes
             </h3>
         </div>
         <div class="row">
@@ -405,13 +405,13 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     {% if page_obj.has_previous %}
-                    <li class="page-item"><a class="page-link" href="?page={{page_obj.prebious_page_number}}">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{page_obj.prebious_page_number}}">Anterior</a></li>
                     {% endif %}
                     {% for number in page_obj.paginator.page_range %}
                     <li class="page-item"><a class="page-link" href="?page={{number}}">{{number}}</a></li>
                     {% endfor %}
                     {% if page_obj.has_next %}
-                    <li class="page-item"><a class="page-link" href="?page={{page_obj.prebious_page_number}}">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="?page={{page_obj.prebious_page_number}}">Enviar</a></li>
                     {% endif %}
                 </ul>
             </nav>

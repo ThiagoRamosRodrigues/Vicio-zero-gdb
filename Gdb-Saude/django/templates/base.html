@@ -77,15 +77,17 @@
 
 {% block content %}{% endblock content %}
 
-<footer class="footer">
+<footer class="site-footer">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p>&copy; 2024 </p>
+                <p>&copy; 2024 - Vício Zero - Av. Mal. Mascarenhas de Morais, 3905 - Imbiribeira, Recife - PE, 51150-003 - Site em desenvolvimento</p>
+                <div class="mt-3"> <!-- Adicionado uma classe de margem superior para espaçamento -->
+                    <img src="../static/img/logobranca.png" alt="Logo" style="border-radius: 10px; max-width: 10%; height: auto;">
+                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-right">
                 <ul class="footer-links">
-                    <li><a href="#">Termos de Serviço</a></li>
                     <li><a href="#">Política de Privacidade</a></li>
                     <li><a href="#">Contate-nos</a></li>
                 </ul>
@@ -93,6 +95,17 @@
         </div>
     </div>
 </footer>
+
+<style>
+.site-footer {
+    background-color: rgb(39, 204, 135); 
+    color: white; 
+    padding: 20px; 
+    bottom: 0; 
+    width: 100%; 
+    left: 0;  
+}
+</style>
 
 <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
   

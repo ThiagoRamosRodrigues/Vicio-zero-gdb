@@ -1,4 +1,4 @@
-from django.http.response import HttpResponseRedirect, JsonResponse
+from django.http.response import HttpResponseRedirect
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
@@ -10,11 +10,6 @@ from django.views.generic import ListView
 import datetime
 from django.template import Context
 from django.template.loader import render_to_string, get_template
-import requests
-from django.shortcuts import render
-from django.views.generic import TemplateView
-from django.http import HttpResponse
-from django.http import JsonResponse
 
 class HomeTemplateView(TemplateView):
     template_name = "index.html"
@@ -100,5 +95,3 @@ class ManageAppointmentTemplateView(ListView):
             "title":"Manage Appointments"
         })
         return context
-
-    

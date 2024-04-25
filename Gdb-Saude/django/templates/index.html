@@ -11,16 +11,16 @@
                Reconhecemos que cada jornada de recuperação é única, e é por 
                isso que oferecemos uma abordagem personalizada para ajudar  
               cada indivíduo a encontrar o caminho para uma vida livre de 
-               dependência.
+               dependência.</p>
 
-             </p>
+             
+             <a href="{% url 'appointment' %}" class="btn btn-light btn-lg action-button" type="button">Marque uma consulta</a>
            </div>
-
          </div>
-
     </div>
 
  </div>
+
 
 {% endblock cta %}
 
@@ -93,14 +93,16 @@
       </div>
     
       <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-0 shadow">
-          <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">Cuidados Primários</h5>
-            <div class="card-text text-black-50">Tratamento para jogos de azar</div>
-          </div>
-        </div>
-      </div>
+       
+            <div class="card border-0 shadow">
+                <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Cuidados Primários</h5>
+                    <div class="card-text text-black-50">Tratamento para jogos de azar</div>
+                </div>
+            </div>
+        </a>
+    </div>
    
       <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
@@ -172,57 +174,68 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
+
+<div> "Olá, paciente! Este formulário proporciona uma interação direta com nossos profissionais cadastrados. Aqui, você pode esclarecer previamente suas preocupações e dores. Essa forma de interação é especialmente útil para pacientes que não têm certeza sobre qual médico procurar para lidar com seu tipo específico de vício."
+</div> <br>  <br> 
 <div class="row">
-  <div class="col-lg-6 mx-auto mb-4">
-    <div class="custom-form">
-      <div class="form-header">
-        <h4 class="form-text">Cadastro</h4>
-        <div class="text-right">
-          <img src="../static/img/logobranca.png" alt="Logo" style="max-width: 100px; height: 100px;">
-        </div>
-      </div>
-      <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
-        {% csrf_token %}
-        <div class="form-group">
-          <label for="name2">Nome</label>
-          <input class="form-control" id="name2" name="name" type="text" placeholder="Nome">
-          <div class="error" id="err-name" style="display: none;">Por favor insira o nome</div>
-        </div>
-
-        <div class="form-group">
-          <label for="email2">Email</label>
-          <input class="form-control" id="email2" name="email" type="text" placeholder="Email">
-          <div class="error" id="err-emailvld" style="display: none;">E-mail não é um formato válido</div>
-        </div>
-
-        <div class="form-group">
-          <label for="CEP">Sexo</label>
-          <input class="form-control" id="CPF" type="text" placeholder="Sexo">
-          <div class="error" id="err-sexo" style="display: none;"></div>
-        </div>
-
-        <div class="form-group">
-          <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!</p>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <button type="submit" class="btn btn-primary btn-rounded w-100">Enviar</button>
-          </div>
-        </div>
-      </form>
-      <div class="form-footer">
-        <p>Ao concluir o cadastro, você aceita a nossa Política de Privacidade e receber dicas e novidades do Vicio Zero e seus parceiros!</p>
-      </div>
+  <div class="col-sm-6">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed/v1/place?q=Recife,Imbiribeira&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%; height: 360px;"></iframe>
     </div>
-  </div>
+  </div><!-- end col -->
+
+  <!-- Contact form -->
+  <div class="col-sm-6">
+    <form role="form" name="ajax-form" id="ajax-form" method="post" class="form-main" action="{% url 'home' %}">
+    {% csrf_token %}
+      <div class="form-group">
+        <label for="name2">Nome</label>
+        <input class="form-control" id="name2" name="Nome" type="text" placeholder="Nome">
+        <div class="error" id="err-Nome" style="display: none;">Selecione o nome</div>
+      </div> <!-- /Form-name -->
+
+      <div class="form-group">
+        <label for="email2">Email</label>
+        <input class="form-control" id="email2" name="Email" type="text" placeholder="Email">
+        <div class="error" id="err-emailvld" style="display: none;">E-mail em formato incorreto</div> 
+      </div> <!-- /Form-email -->
+
+      <div class="form-group">
+        <label for="message2">Mensagem</label>
+        <textarea class="form-control" id="message2" name="message" rows="5" placeholder="message">Mensagem</textarea>
+
+        <div class="error" id="err-message" style="display: none;">Enter</div>
+      </div> <!-- /col -->
+
+      <div class="row">            
+          <button type="submit" class="btn btn-primary " id="send">Enviar</button>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+
+    </form> <!-- /form -->
+  </div> <!-- end col -->
+
+</div> <!-- end row -->
+    
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+
+
 
        <!-- Formulário de Consulta de Profissional -->
        <div class="col-lg-6 mx-auto mb-4">
         <div class="custom-form">
             <div class="form-header">
                 <h1 class="form-text">Consultar profissional</h1>
-                
+                <div>
+                  <h5>Este formulário permite que você encontre o tipo específico de profissional que está procurando. Por favor, selecione o tipo de profissional que melhor se adequa às suas necessidades:</h5>
+                  </div>
             </div>
             <form id="buscarProfissionaisForm" method="post">
                 {% csrf_token %}
@@ -244,15 +257,19 @@
     </div>
       
       <script>
+          function preencherCEP(cep) {
+              document.getElementById('cepProfissional').value = cep;
+          }
+
           function consultaProfissional() {
               let tipoProfissional = document.querySelector('#tipoProfissional').value;
               let cep;
-      
+
               // Determinar o CEP com base no tipo de profissional selecionado
               switch (tipoProfissional) {
                     
                   case 'Dr Alice ( especialita em tratamento para Jogos de Azar)':
-                      cep = '	52031-900';
+                      cep = '52031-900';
                       break;
                   case 'Dr Ana ( especialita em tratamento para Alcoolismo)':
                       cep = '52021-900';
@@ -266,17 +283,16 @@
                   default:
                       cep = '';
               }
-      
+
               if (!cep) {
                   alert('Profissional não encontrado');
                   return;
               }
-      
-              
+
               document.getElementById('mapaProfissional').src = `https://www.google.com/maps/embed/v1/place?q=${cep}&key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4`;
           }
-
        </script>
+
 
        
         <section id="contact" class="card m-4 p-4 w-100">
@@ -314,33 +330,33 @@
    
     
       
-            <style>
-              .custom-form {
-                  background-color: rgb(39, 204, 135); 
-                  border-radius: 10px;
-                  padding: 20px; 
-                  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-              }
+        <style>
+          .custom-form {
+              background-color: rgb(39, 204, 135); 
+              border-radius: 10px;
+              padding: 20px; 
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+          }
+      
           
-              
-              .form-header {
-                  background-color: rgb(39, 204, 135); 
-                  color: white; 
-                  padding: 10px 20px;
-                  border-top-left-radius: 10px; 
-                  border-top-right-radius: 10px; 
-              }
-              
-              .form-footer {
-                  background-color: rgb(39, 204, 135); 
-                  color: white; 
-                  padding: 10px 20px; 
-                  border-bottom-left-radius: 10px; 
-                  border-bottom-right-radius: 10px; 
-              }
-              
-                .form-text {
-                  font-size: 30px;
-              }
-          </style>
+          .form-header {
+              background-color: rgb(39, 204, 135); 
+              color: white; 
+              padding: 10px 20px;
+              border-top-left-radius: 10px; 
+              border-top-right-radius: 10px; 
+          }
+          
+          .form-footer {
+              background-color: rgb(39, 204, 135); 
+              color: white; 
+              padding: 10px 20px; 
+              border-bottom-left-radius: 10px; 
+              border-bottom-right-radius: 10px; 
+          }
+          
+            .form-text {
+              font-size: 30px;
+          }
+      </style>     
 {% endblock content %}
