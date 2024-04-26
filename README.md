@@ -1,4 +1,4 @@
-![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/592d139f-9acd-48da-b137-d12765eed868)Descrição do Fluxo Inicial da Página HOME: ![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/eeb8443b-7061-4057-9652-e3b439f99a35) ![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/5bbc1137-e807-4d43-ad7b-769dc69b72cf)
+Descrição do Fluxo Inicial da Página HOME: ![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/eeb8443b-7061-4057-9652-e3b439f99a35) ![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/5bbc1137-e807-4d43-ad7b-769dc69b72cf)
 ![image](https://github.com/ThiagoRamosRodrigues/Vicio-zero-gdb/assets/112834625/ba38a973-e247-4276-a89d-ef20d95a1ad2)
 
 
