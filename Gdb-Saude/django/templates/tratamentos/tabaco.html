@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento para Vícios - Drogas Ilícitas</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/tabaco.css' %}">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="{% static 'img/logoverde.png' %}" alt="Logo do Site" class="logo">
+            </div>
+        </header>
+
+        <style>
+            .header-content {
+                background-image: url('{% static "img/tabaco-doencas-cardiovasculares.png" %}');
+                background-size: cover;
+                background-position: center;
+                height: 60vh;
+                color: #ffffff;
+                padding: 30px;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start; /* Alinha os elementos no início do cabeçalho */
+                align-items: flex-end; /* Alinha os elementos na parte inferior do cabeçalho */
+                font-size: 24px;
+            }
+        </style>
+    <!-- Primeiro Topico - Causas do Vicio -->
+
+    <section class="causas">
+        <div class="causas_content">
+            <div class="card">
+                <center>
+                    <h2>O Tabagismo</h2>
+                </center>
+                <div class="texto_causas">
+                    <p>O consumo de tabaco, em suas diversas formas, representa um grave problema de saúde pública, com impactos devastadores tanto para o indivíduo quanto para a sociedade. Apesar de ser uma prática frequentemente associada a um simples hábito, o tabagismo esconde uma realidade alarmante, marcada por uma série de complicações de saúde e um alto índice de mortalidade.</p>
+                    <br>
+                    <p>O consumo de tabaco eleva consideravelmente o risco de doenças cardíacas, como infarto do miocárdio, AVC (Acidente Vascular Cerebral), angina e hipertensão arterial. As substâncias tóxicas presentes na fumaça do cigarro danificam os vasos sanguíneos, aumentam a formação de placas de gordura e diminuem o fluxo de sangue para o coração e o cérebro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fim do Topico - Causas do Vicio -->
+
+    <section class="sintomas">
+        <div class="sintomas_content card">
+            <h2>O que é o tabagismo</h2>
+            <p>O tabagismo é uma doença crônica, de caráter epidêmico, consequente à dependência à nicotina, a principal, mas não única substância causadora da adicção. O cigarro convencional contém milhares de substâncias químicas, sendo fator de risco para múltiplas doenças graves, como doenças cardiovasculares, respiratórias crônicas e diversas neoplasias, dentre outras.</p>
+            <br>
+            <p>Estimativas produzidas por estudos epidemiológicos de coorte indicam que indicam que a expectativa de vida média é reduzida em 10 anos em pessoas tabagistas. Quando a suspensão definitiva do uso ocorre antes dos 40 anos, o risco de morte reduz em até 90%.</p>
+        </div>
+    </section>
+
+    <!-- Fim do Topico - Sintomas -->
+
+    <section class="solucao_content">
+        <div class="proposta_solucao">
+            <h2>O vício em tabaco</h2>
+            <p>Atrás da fumaça e do aroma intrigante, esconde-se um labirinto de dependência, onde a nicotina, principal vilã, tece suas teias insidiosas, aprisionando indivíduos em um ciclo vicioso de busca por prazer e alívio.</p>
+            <div class="subtitulos">Nicotina</div>
+            <p>A nicotina, substância psicoativa presente no tabaco, assume o papel de maestrina nesse concerto de dependência. Ela atua no sistema nervoso central, liberando dopamina, neurotransmissor associado à sensação de prazer e recompensa. Com o tempo, o organismo se adapta à presença da nicotina, tornando-a necessária para o bem-estar físico e psicológico do indivíduo.</p>
+            <!-- Adicione os outros parágrafos aqui -->
+        </div>
+
+        <div class="dicas_rapidas">
+            
+            <img src="{% static 'img/charge_tabagismo.jpg' %}"  alt="Sintomas">
+            <small>O tabaco mata mais de 8 milhões de pessoas a cada ano. Mais de 7 milhões dessas mortes são resultado do uso direto do tabaco, enquanto cerca de 1,2 milhão são resultado de não-fumantes expostos ao fumo passivo. Quase 80% dos 1,1 bilhão de fumantes do mundo vivem em países de baixa e média renda. Arte por Duke.</small>
+        </div>
+    </section>
+
+    <!-- Fim do Topico -Proposta de Solução -->
+
+    <!-- TOPICO - CAIXA DE IMAGENS COM TRATAMENTOS -->
+
+    <section class="titulo-tratamento">
+        <div class="titulo_content">
+            <h2>Nossos Tratamentos...</h2>
+        </div>
+    </section>
+
+    <section class="tratamentos-imagens">
+        <div class="caixa_tratamento">
+            <div class="tratamento">
+                
+                <img src="{% static 'img/Nicotínica.jpg' %}" alt="Tratamento 1">
+                <div class="legenda">Substituição Nicotínica</div>
+            </div>
+            <div class="tratamento">
+                
+                <img src="{% static 'img/antidepressivos.webp' %}"  alt="Tratamento 2">
+                <div class="legenda">Antidepressivos</div>
+            </div>
+            <div class="tratamento">
+               
+                <img src= "{% static 'img/terapia.jpg' %}"  alt="Tratamento 3">
+                <div class="legenda">Terapia Cognitiva</div>
+            </div>
+            <div class="tratamento">
+                
+                <img src="{% static 'img/apoio.jpg' %}"  alt="Tratamento 4">
+                <div class="legenda">Grupos de Apoio</div>
+            </div>
+        </div>
+    </section>
+    <!-- FIM DO TOPICO - CAIXA DE IMAGENS COM TRATAMENTOS -->
+
+    <!-- TOPICO - TEXTO DOS TRATAMENTOS -->
+
+    <section class="tratamentos-texto">
+        <div class="tratamentos">
+            <h2></h2>
+
+            <h3 class="subtitulos">Terapia de Substituição Nicotínica</h3>
+
+            <p>A TSN fornece ao paciente dose de uma das substâncias mais viciantes do cigarro sem o risco das outras substâncias presentes nele que são mais nocivas, como o alcatrão e o monóxido de carbono. Assim ajuda a reduzir as crises de abstinência, retirando a nicotina aos poucos e ajudando no processo para parar de fumar.</p>
+
+            <p>Entre os métodos disponíveis para a TSN, o que tem maior adesão é o adesivo de nicotina, por apresentar menos efeitos adversos e desagradáveis. Mas existem também métodos como o chiclete de nicotina, a pastilha de nicotina e o spray nasal de nicotina.</p>
+
+            <!-- Adicione os outros tratamentos aqui -->
+        </div>
+    </section>
+    <!-- FIM TOPICO - TEXTO DOS TRATAMENTOS -->
+
+    <!-- FOOTER -->
+    <footer>
+        <h4>Guiando você na jornada da recuperação, oferecendo esperança, apoio e uma nova perspectiva de vida além do vício.</h4>
+        <p>&copy; 2024 GDB Vício Zero. Todos os direitos reservados.</p>
+        <p>Suporte: (81) 9XXXX-XXXX</p>
+        <p>E-mail: viciozero@gmail.com</p>
+    </footer>
+</body>
+
+</html>

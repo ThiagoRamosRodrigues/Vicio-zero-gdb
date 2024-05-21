@@ -1,0 +1,235 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+                                                /* Header */
+
+.image{
+    opacity: 1;
+}
+
+.header-content {
+    background-color: #27cc87;
+    color: #f2f2f2;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px; /* Altere o tamanho do texto conforme necessário */
+
+}
+
+.titulo_header {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    text-align: left; /* Alinha o texto à esquerda */
+
+}
+
+.header-content p {
+    margin-top: 20px;
+}
+
+.header-content img {
+    max-width: 100%;
+    margin-left: 20px; /* Adiciona margem à esquerda da imagem */
+}
+                                            /* Fim do Header */
+
+
+                                            /*Causas do vicio*/
+.causas_content {
+background-color: #f2f2f2;
+padding: 60px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.texto_causas {
+flex: 1;
+text-align: left;
+width: 750px;
+margin-right: 40px; /* Adiciona margem à direita do texto */
+}
+
+.causas_image img {
+max-width: 100%;
+height: 300px;
+}
+.solucao_content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* Alterado para alinhar itens ao topo */
+}
+
+.proposta_solucao {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.subtitulos {
+    background-color: #27cc87;
+    padding: 5px 10px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.dicas_rapidas {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+    display: flex; /* Adicionado display flex */
+    align-items: center; /* Adicionado alinhamento vertical ao centro */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+
+                                                    /* FIM DO TOPICO DE PROPOSTA*/
+                                                    /* SOLUÇÕES CAIXA DE IMAGEM */
+
+
+.titulo-tratamento {
+    display: flex;
+    justify-content: center;
+}                             
+
+.titulo-content {
+    height: 50px;
+    width: 310px;
+   
+}
+
+.tratamentos-imagens {
+    width: 100%;
+    overflow-x: auto; /* Habilita a barra de rolagem horizontal */
+    white-space: nowrap; /* Evita que os elementos quebrem a linha */
+    display:flex ;
+    justify-content: center; /* Centraliza os tratamentos horizontalmente */
+    align-items: center; /* Centraliza os tratamentos verticalmente */
+}
+
+.tratamentos-texto{
+    display: flex;
+    justify-content: center;
+}
+
+.tratamentos{
+    width: 1000px;
+}
+
+.caixa_tratamento {
+    display: flex;
+}
+
+.tratamento {
+    width: 200px;
+    min-height: 250px; /* Alterado para min-height para garantir espaço para a legenda */
+    background-color: #000000;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Adiciona posição relativa */
+    margin-bottom: 20px; /* Adiciona margem inferior para deixar espaço para a legenda */
+}
+
+.tratamento img {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que a imagem preencha toda a área da caixa */
+    
+}
+
+.sintomas{
+    display: flex;
+    justify-content: center;
+}
+
+.sintomas_content{
+    width: 1150px;
+}
+
+.legenda {
+    background-color: #27cc87;
+    width: calc(100% - 20px); /* Ajusta a largura para corresponder à largura do tratamento */
+    padding: 10px;
+    text-align: center;
+    position: absolute; /* Alterado para posição absoluta */
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+                                            /* SOLUÇÕES CAIXA DE IMAGEM */
+                                                        /* Footer */
+
+footer {
+    background-color: #27cc87;
+    text-align: center;
+    padding: 55px;
+     color: #ffffff;
+    
+}
+                                                        
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 60px 70px 600px 500px 600px 600px 600px;
+    grid-template-columns: auto;
+    
+    gap: 30px;
+    height: 100%;
+    
+ }
+   
+ #item-0 {
+ 
+    background-color: #27cc87;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
+ 

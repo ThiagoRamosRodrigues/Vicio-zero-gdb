@@ -1,15 +1,16 @@
+# doctor/views.py
+
 from django.http.response import HttpResponseRedirect
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic.base import TemplateView
-from django.core.mail import EmailMessage, message
+from django.core.mail import EmailMessage
 from django.conf import settings
 from django.contrib import messages
 from .models import Appointment
 from django.views.generic import ListView
 import datetime
-from django.template import Context
-from django.template.loader import render_to_string, get_template
+from django.template.loader import get_template
 
 class HomeTemplateView(TemplateView):
     template_name = "index.html"
@@ -28,7 +29,6 @@ class HomeTemplateView(TemplateView):
         )
         email.send()
         return HttpResponse("Email sent successfully!")
-
 
 class AppointmentTemplateView(TemplateView):
     template_name = "appointment.html"
@@ -60,7 +60,6 @@ class ManageAppointmentTemplateView(ListView):
     login_required = True
     paginate_by = 3
 
-
     def post(self, request):
         date = request.POST.get("date")
         appointment_id = request.POST.get("appointment-id")
@@ -70,8 +69,8 @@ class ManageAppointmentTemplateView(ListView):
         appointment.save()
 
         data = {
-            "fname":appointment.first_name,
-            "date":date,
+            "fname": appointment.first_name,
+            "date": date,
         }
 
         message = get_template('email.html').render(data)
@@ -87,11 +86,22 @@ class ManageAppointmentTemplateView(ListView):
         messages.add_message(request, messages.SUCCESS, f"You accepted the appointment of {appointment.first_name}")
         return HttpResponseRedirect(request.path)
 
-
-    def get_context_data(self,*args, **kwargs):
+    def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
         appointments = Appointment.objects.all()
-        context.update({   
-            "title":"Manage Appointments"
+        context.update({
+            "title": "Manage Appointments"
         })
         return context
+
+def tratamento_cannabis(request):
+    return render(request, 'tratamentos/cannabis.html')
+
+def tratamento_jogos_de_azar(request):
+    return render(request, 'tratamentos/jogos_de_azar.html')
+
+def tratamento_tabaco(request):
+    return render(request, 'tratamentos/tabaco.html')
+
+def tratamento_alcoolismo(request):
+    return render(request, 'tratamentos/alcoolismo.html')

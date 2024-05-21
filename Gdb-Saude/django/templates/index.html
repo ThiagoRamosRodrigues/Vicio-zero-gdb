@@ -79,52 +79,66 @@
   </div>
 </div>
 
-  <div class="container">
-    <div class="row">
-    
-      <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-0 shadow">
-          <img src="{% static 'img/service1.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">Cuidados Primários</h5>
-            <div class="card-text text-black-50">Tratamento para Cannabis</div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="col-xl-3 col-md-6 mb-4">
-       
-            <div class="card border-0 shadow">
-                <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title mb-0">Cuidados Primários</h5>
-                    <div class="card-text text-black-50">Tratamento para jogos de azar</div>
-                </div>
-            </div>
-        </a>
-    </div>
-   
-      <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-0 shadow">
-          <img src="{% static 'img/service3.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0" >Cuidados Primários</h5>
-            <div class="card-text text-black-50">Tratamento para Tabaco</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-0 shadow">
-          <img src="{% static 'img/service4.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title mb-0">Cuidados Primários</h5>
-            <div class="card-text text-black-50">Tratamento para Alcoolismo</div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="container">
+  <div class="row">
 
+      <div class="col-xl-3 col-md-6 mb-4">
+          <a href="{% url 'tratamento_cannabis' %}">
+              <div class="card border-0 shadow">
+                  <img src="{% static 'img/service1.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                      <h5 class="card-title mb-0 green-text">Cuidados Primários</h5>
+                      <div class="card-text text-black-50">Tratamento para Drogas
+                    </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+          <a href="{% url 'tratamento_jogos_de_azar' %}">
+              <div class="card border-0 shadow">
+                  <img src="{% static 'img/service2.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                      <h5 class="card-title mb-0 green-text">Cuidados Primários</h5>
+                      <div class="card-text text-black-50">Tratamento para jogos de azar</div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+          <a href="{% url 'tratamento_tabaco' %}">
+              <div class="card border-0 shadow">
+                  <img src="{% static 'img/service3.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                      <h5 class="card-title mb-0 green-text">Cuidados Primários</h5>
+                      <div class="card-text text-black-50">Tratamento para Tabaco</div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+          <a href="{% url 'tratamento_alcoolismo' %}">
+              <div class="card border-0 shadow">
+                  <img src="{% static 'img/service4.jpg' %}" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                      <h5 class="card-title mb-0 green-text">Cuidados Primários</h5>
+                      <div class="card-text text-black-50">Tratamento para Alcoolismo</div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <style>
+        .green-text {
+            color: green;
+        }
+    </style>
+
+
+    </div>
     <div class="text-center">
       <img src="../static/img/logoverde.png" alt="Logo" style="border-radius: 1000px; max-width: 60%; height: auto; margin: 150px;">
     </div>

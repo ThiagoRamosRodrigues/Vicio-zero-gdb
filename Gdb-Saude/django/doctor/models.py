@@ -1,6 +1,10 @@
 from django.db import models
 from django.http import request
 
+class MeuModelo(models.Model):
+    campo1 = models.CharField(max_length=100)
+    campo2 = models.IntegerField()
+    # Adicione mais campos conforme necessário
 class Appointment(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)

@@ -1,0 +1,260 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+                                                /* Header */
+.image{
+    opacity: 1;
+}
+.header-content {
+    background-image: url('alcoolismo-header.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Alinha os elementos no início do cabeçalho */
+    align-items: flex-end; /* Alinha os elementos na parte inferior do cabeçalho */
+    font-size: 24px;
+}
+
+.logo {
+    width: 200px; /* Largura da logo aumentada */
+    height: auto; /* Altura automática para manter a proporção */
+    margin-bottom: 0px; /* Adiciona um espaçamento abaixo da logo */
+}
+
+.titulo_header {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+                                            /* Fim do Header */
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+ }
+
+ .causas_sintomas{
+    display: flex;
+
+ }
+
+ .imagem_sintomas{
+    width: 100%;
+ }
+
+.causas_content {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+/*
+background-color: #f2f2f2;
+padding: 60px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+.texto_causas {
+margin: 20px 0;
+/*flex: 1;
+text-align: left;
+width: 750px;
+margin-right: 40px; */ /* Adiciona margem à direita do texto */
+
+}
+
+/*
+.causas_image img {
+max-width: 100%;
+height: 300px;
+}
+*/
+
+
+
+.solucao_content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.proposta_solucao {
+    text-align: left;
+    margin-right: 20px;
+}
+
+.subtitulos {
+    background-color: #333333;
+    padding: 5px 10px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.dicas_rapidas {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dicas_rapidas img {
+    
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Garante que a imagem se ajuste proporcionalmente */
+}
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+
+                                                    /* FIM DO TOPICO DE PROPOSTA*/
+                                                    /* SOLUÇÕES CAIXA DE IMAGEM */
+
+
+.titulo-tratamento {
+    display: flex;
+    justify-content: center;
+}                             
+
+.titulo-content {
+    height: 50px;
+    width: 310px;
+   
+}
+
+.tratamentos-imagens {
+    width: 100%;
+    overflow-x: auto; /* Habilita a barra de rolagem horizontal */
+    white-space: nowrap; /* Evita que os elementos quebrem a linha */
+    display:flex ;
+    justify-content: center; /* Centraliza os tratamentos horizontalmente */
+    align-items: center; /* Centraliza os tratamentos verticalmente */
+}
+
+.tratamentos-texto{
+    display: flex;
+    justify-content: center;
+}
+
+.tratamentos{
+    width: 1000px;
+}
+
+.caixa_tratamento {
+    display: flex;
+}
+
+.tratamento {
+    width: 200px;
+    min-height: 250px; /* Alterado para min-height para garantir espaço para a legenda */
+    background-color: #000000;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative; /* Adiciona posição relativa */
+    margin-bottom: 20px; /* Adiciona margem inferior para deixar espaço para a legenda */
+}
+
+.tratamento img {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para garantir que a imagem preencha toda a área da caixa */
+    
+}
+
+.sintomas{
+    margin: 20px 0;
+  /*  display: flex;
+    justify-content: center;
+    */
+}
+
+/*
+.sintomas_content{
+    width: 1150px;
+}
+*/
+
+.legenda {
+    background-color: #333333;
+    color: #ffffff;
+    width: calc(100% - 20px); /* Ajusta a largura para corresponder à largura do tratamento */
+    padding: 10px;
+    text-align: center;
+    position: absolute; /* Alterado para posição absoluta */
+    bottom: 0;
+    left: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+                                            /* SOLUÇÕES CAIXA DE IMAGEM */
+                                                        /* Footer */
+
+footer {
+    background-color: #27cc87;
+    text-align: center;
+    padding: 55px;
+    color: #ffffff;
+}
+                                                        
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 60px 70px 600px 500px 600px 600px 600px;
+    grid-template-columns: auto;
+    
+    gap: 30px;
+    height: 100%;
+    
+ }
+   
+ #item-0 {
+ 
+    background-color: #27cc87;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+ }
